@@ -4,6 +4,8 @@
 #
 #    pip-compile
 #
+--extra-index-url https://alpine-wheels.github.io/index
+
 bleach==4.1.0
     # via readme-renderer
 build==0.7.0
