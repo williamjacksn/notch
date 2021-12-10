@@ -1,4 +1,4 @@
 .idea
 dist
 docker-compose.override.yaml
-logs.egg-info
+notch.egg-info

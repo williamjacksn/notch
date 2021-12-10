@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  image_name: ghcr.io/williamjacksn/logs-dev
+  image_name: ghcr.io/williamjacksn/notch-dev
 
 jobs:
   build:
