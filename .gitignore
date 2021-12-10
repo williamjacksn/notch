@@ -1,3 +1,4 @@
 .idea
 dist
+docker-compose.override.yaml
 logs.egg-info
