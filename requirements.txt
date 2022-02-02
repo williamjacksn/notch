@@ -68,10 +68,12 @@ tomli==1.2.2
     #   pep517
 tqdm==4.62.3
     # via twine
-twine==3.7.1
+twine==3.8.0
     # via -r requirements.in
 urllib3==1.26.7
-    # via requests
+    # via
+    #   requests
+    #   twine
 webencodings==0.5.1
     # via bleach
 zipp==3.6.0
