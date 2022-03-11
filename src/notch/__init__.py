@@ -2,22 +2,23 @@ import logging
 import os
 import sys
 
+__version__ = '0.0.1'
+
+log = logging.getLogger(__name__)
 
 def make_log(log_name: str) -> logging.Logger:
-    _log = logging.getLogger(log_name)
-
     log_format = os.getenv('LOG_FORMAT', '%(levelname)s [%(name)s] %(message)s')
     log_level = os.getenv('LOG_LEVEL', 'INFO')
     logging.basicConfig(format=log_format, level=logging.DEBUG, stream=sys.stdout)
-    _log.debug(f'Initializing logger for {log_name}')
+    log.debug(f'Initializing logger for {log_name}')
 
     if not log_level == 'DEBUG':
-        _log.debug(f'Changing log level to {log_level}')
+        log.debug(f'Changing root log level to {log_level}')
     logging.getLogger().setLevel(log_level)
 
     for log_spec in os.getenv('OTHER_LOG_LEVELS', '').split():
-        for logger, level in log_spec.split(':', maxsplit=1):
-            _log.debug(f'Changing log level for {logger} to {level}')
-            logging.getLogger(logger).setLevel(level)
+        logger, level = log_spec.split(':', maxsplit=1)
+        log.debug(f'Changing log level for {logger} to {level}')
+        logging.getLogger(logger).setLevel(level)
 
-    return _log
+    return logging.getLogger(log_name)
