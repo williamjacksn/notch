@@ -1,3 +1,3 @@
 # notch
 
-🪵 The Python logging micropackage
+🪓 The Python logging micropackage
