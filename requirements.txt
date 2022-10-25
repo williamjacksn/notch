@@ -50,7 +50,7 @@ pyparsing==3.0.6
     # via packaging
 readme-renderer==37.2
     # via twine
-requests==2.26.0
+requests==2.28.1
     # via
     #   requests-toolbelt
     #   twine
