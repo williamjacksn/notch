@@ -28,7 +28,7 @@ importlib-metadata==5.0.0
     # via
     #   keyring
     #   twine
-jeepney==0.7.1
+jeepney==0.8.0
     # via
     #   keyring
     #   secretstorage
