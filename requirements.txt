@@ -6,7 +6,7 @@
 #
 --extra-index-url https://alpine-wheels.github.io/index
 
-bleach==4.1.0
+bleach==5.0.1
     # via readme-renderer
 build==0.8.0
     # via -r requirements.in
@@ -35,9 +35,7 @@ jeepney==0.7.1
 keyring==23.4.0
     # via twine
 packaging==21.3
-    # via
-    #   bleach
-    #   build
+    # via build
 pep517==0.13.0
     # via build
 pkginfo==1.8.2
