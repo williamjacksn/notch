@@ -64,7 +64,7 @@ secretstorage==3.3.1
     # via keyring
 six==1.16.0
     # via bleach
-tomli==1.2.2
+tomli==2.0.1
     # via
     #   build
     #   pep517
