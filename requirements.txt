@@ -22,7 +22,7 @@ cryptography==38.0.1
     # via secretstorage
 docutils==0.19
     # via readme-renderer
-idna==3.3
+idna==3.4
     # via requests
 importlib-metadata==4.8.2
     # via
