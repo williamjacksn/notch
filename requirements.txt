@@ -66,11 +66,7 @@ secretstorage==3.3.3
     # via keyring
 six==1.16.0
     # via bleach
-tomli==2.0.1
-    # via
-    #   build
-    #   pep517
-twine==4.0.1
+twine==4.0.2
     # via -r requirements.in
 urllib3==1.26.12
     # via
