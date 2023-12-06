@@ -2,7 +2,7 @@ import logging
 import os
 import sys
 
-__version__ = '2022.1'
+__version__ = '2023.1'
 
 log = logging.getLogger(__name__)
 
