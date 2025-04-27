@@ -7,6 +7,10 @@ __version__ = "2023.1"
 log = logging.getLogger(__name__)
 
 
+def configure():
+    make_log(__name__)
+
+
 def make_log(log_name: str) -> logging.Logger:
     log_format = os.getenv("LOG_FORMAT", "%(levelname)s [%(name)s] %(message)s")
     log_level = os.getenv("LOG_LEVEL", "INFO")
