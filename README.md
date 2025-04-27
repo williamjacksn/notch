@@ -11,16 +11,16 @@ customize logging behavior with environment variables.
 
 ## Usage
 
-Import notch and call `make_log()` to make a logger object in your application entrypoint.
+Import notch and call `configure()` to configure logging in your application entrypoint.
 
 ```python
 import notch
 
-log = notch.make_log(__name__)
+notch.configure()
 ```
 
-Call `make_log()` as early as possible in your application startup, because notch in turn
-calls `logger.basicConfig()` to configure the logging system.
+Call `configure()` as early as possible in your application startup, because notch in turn
+calls `logging.basicConfig()` to configure the logging system.
 
 Using the default settings, notch will configure the root logger to send logs to
 `sys.stdout`, set the log level to `INFO`, and set the log format to
