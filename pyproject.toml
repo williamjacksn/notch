@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "notch"
+version = "2025.2"
 description = "The Python logging micropackage"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -16,7 +17,6 @@ classifiers = [
     "Topic :: Software Development",
     "Topic :: System :: Logging",
 ]
-dynamic = ["version"]
 
 [[project.authors]]
 name = "William Jackson"
@@ -26,6 +26,3 @@ email = "william@subtlecoolness.com"
 "Homepage" = "https://github.com/williamjacksn/notch"
 "Changes" = "https://github.com/williamjacksn/notch/releases"
 "Issues" = "https://github.com/williamjacksn/notch/issues"
-
-[tool.setuptools.dynamic]
-version.attr = "notch.__version__"
