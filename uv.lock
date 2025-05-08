@@ -4,4 +4,5 @@ requires-python = ">=3.9"
 
 [[package]]
 name = "notch"
+version = "2025.2"
 source = { editable = "." }
