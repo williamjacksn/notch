@@ -49,7 +49,7 @@ def gen_github_workflows(target: str):
                 },
                 "permissions": {"id-token": "write"},
                 "steps": [
-                    {"name": "Check out the repository", "uses": "actions/checkout@v4"},
+                    {"name": "Check out the repository", "uses": "actions/checkout@v5"},
                     {"name": "Publish the package to PyPI", "run": "sh ci/publish.sh"},
                 ],
             },
