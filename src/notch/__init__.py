@@ -5,7 +5,7 @@ import sys
 log = logging.getLogger(__name__)
 
 
-def configure():
+def configure() -> None:
     make_log(__name__)
 
 
