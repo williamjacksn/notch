@@ -30,6 +30,7 @@ email = "william@subtlecoolness.com"
 [dependency-groups]
 dev = [
     "ruff>=0.14.0",
+    "ty>=0.0.1a32",
     "uv-build>=0.9.2",
 ]
 
