@@ -4,7 +4,7 @@ requires = ["uv-build>=0.9.22,<0.10.0"]
 
 [project]
 name = "notch"
-version = "2025.2"
+version = "2026.0"
 description = "The Python logging micropackage"
 readme = "README.md"
 requires-python = ">=3.10"

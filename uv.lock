@@ -4,7 +4,7 @@ requires-python = ">=3.10"
 
 [[package]]
 name = "notch"
-version = "2025.2"
+version = "2026.0"
 source = { editable = "." }
 
 [package.dev-dependencies]
