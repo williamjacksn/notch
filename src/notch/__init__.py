@@ -15,7 +15,7 @@ def make_log(log_name: str) -> logging.Logger:
     logging.basicConfig(format=log_format, level=logging.DEBUG, stream=sys.stdout)
     log.debug(f"Initializing logger for {log_name}")
 
-    if not log_level == "DEBUG":
+    if log_level != "DEBUG":
         log.debug(f"Changing root log level to {log_level}")
     logging.getLogger().setLevel(log_level)
 
